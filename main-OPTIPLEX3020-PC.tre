@@ -1,0 +1,279 @@
+ÀÄmain
+   ÀÄMAIN  0/200  Ram=1
+      ÃÄ@cinit1  (Inline)  Ram=0
+      ÃÄrtc_init  0/35  Ram=2
+      ³  ÃÄwrite_ds1302  0/15  Ram=2
+      ³  ³  ÃÄwrite_ds1302_byte  0/24  Ram=2
+      ³  ³  ÀÄwrite_ds1302_byte  0/24  Ram=2
+      ³  ÃÄwrite_ds1302  0/15  Ram=2
+      ³  ³  ÀÄ*
+      ³  ÃÄread_ds1302  0/46  Ram=3
+      ³  ³  ÀÄwrite_ds1302_byte  0/24  Ram=2
+      ³  ÀÄwrite_ds1302  0/15  Ram=2
+      ³     ÀÄ*
+      ÃÄrtc_set_datetime  0/70  Ram=7
+      ³  ÃÄget_bcd  0/23  Ram=4
+      ³  ³  ÃÄ@DIV88  0/21  Ram=3
+      ³  ³  ÀÄ@MUL88  0/37  Ram=2
+      ³  ÃÄwrite_ds1302  0/15  Ram=2
+      ³  ³  ÀÄ*
+      ³  ÃÄget_bcd  0/23  Ram=4
+      ³  ³  ÀÄ*
+      ³  ÃÄwrite_ds1302  0/15  Ram=2
+      ³  ³  ÀÄ*
+      ³  ÃÄget_bcd  0/23  Ram=4
+      ³  ³  ÀÄ*
+      ³  ÃÄwrite_ds1302  0/15  Ram=2
+      ³  ³  ÀÄ*
+      ³  ÃÄget_bcd  0/23  Ram=4
+      ³  ³  ÀÄ*
+      ³  ÃÄwrite_ds1302  0/15  Ram=2
+      ³  ³  ÀÄ*
+      ³  ÃÄget_bcd  0/23  Ram=4
+      ³  ³  ÀÄ*
+      ³  ÃÄwrite_ds1302  0/15  Ram=2
+      ³  ³  ÀÄ*
+      ³  ÃÄget_bcd  0/23  Ram=4
+      ³  ³  ÀÄ*
+      ³  ÃÄwrite_ds1302  0/15  Ram=2
+      ³  ³  ÀÄ*
+      ³  ÃÄget_bcd  0/23  Ram=4
+      ³  ³  ÀÄ*
+      ³  ÀÄwrite_ds1302  0/15  Ram=2
+      ³     ÀÄ*
+      ÃÄedit_time  0/226  Ram=0
+      ³  ÃÄdelayled_off  0/47  Ram=3
+      ³  ³  ÃÄdisplay_led  0/60  Ram=3
+      ³  ³  ³  ÃÄ@const684  0/27  Ram=0
+      ³  ³  ³  ÀÄoff_on_led  (Inline)  Ram=1
+      ³  ³  ³     ÃÄ@WRITEBITA  0/32  Ram=6
+      ³  ³  ³     ÃÄ@WRITEBITA  0/32  Ram=6
+      ³  ³  ³     ÃÄ@delay_ms1  (Inline)  Ram=1
+      ³  ³  ³     ÃÄ@WRITEBITA  0/32  Ram=6
+      ³  ³  ³     ÀÄ@WRITEBITA  0/32  Ram=6
+      ³  ³  ÃÄdisplay_led  0/60  Ram=3
+      ³  ³  ³  ÀÄ*
+      ³  ³  ÃÄdisplay_led  0/60  Ram=3
+      ³  ³  ³  ÀÄ*
+      ³  ³  ÃÄdisplay_led  0/60  Ram=3
+      ³  ³  ³  ÀÄ*
+      ³  ³  ÃÄdisplay_led  0/60  Ram=3
+      ³  ³  ³  ÀÄ*
+      ³  ³  ÀÄdisplay_led  0/60  Ram=3
+      ³  ³     ÀÄ*
+      ³  ÃÄdelayled_off  0/47  Ram=3
+      ³  ³  ÀÄ*
+      ³  ÃÄ@goto10960  0/11  Ram=0
+      ³  ÃÄrtc_set_datetime  0/70  Ram=7
+      ³  ³  ÀÄ*
+      ³  ÃÄdelayled_off  0/47  Ram=3
+      ³  ³  ÀÄ*
+      ³  ÃÄdelayled_on_edit  0/89  Ram=3
+      ³  ³  ÃÄ@goto10846  0/8  Ram=0
+      ³  ³  ÃÄdisplay_time  0/67  Ram=4
+      ³  ³  ³  ÃÄ@DIV88  0/21  Ram=3
+      ³  ³  ³  ÃÄdisplay_led  0/60  Ram=3
+      ³  ³  ³  ³  ÀÄ*
+      ³  ³  ³  ÃÄ@DIV88  0/21  Ram=3
+      ³  ³  ³  ÃÄdisplay_led  0/60  Ram=3
+      ³  ³  ³  ³  ÀÄ*
+      ³  ³  ³  ÃÄ@DIV88  0/21  Ram=3
+      ³  ³  ³  ÃÄdisplay_led  0/60  Ram=3
+      ³  ³  ³  ³  ÀÄ*
+      ³  ³  ³  ÃÄ@DIV88  0/21  Ram=3
+      ³  ³  ³  ÃÄdisplay_led  0/60  Ram=3
+      ³  ³  ³  ³  ÀÄ*
+      ³  ³  ³  ÃÄ@DIV88  0/21  Ram=3
+      ³  ³  ³  ÃÄdisplay_led  0/60  Ram=3
+      ³  ³  ³  ³  ÀÄ*
+      ³  ³  ³  ÃÄ@DIV88  0/21  Ram=3
+      ³  ³  ³  ÀÄdisplay_led  0/60  Ram=3
+      ³  ³  ³     ÀÄ*
+      ³  ³  ÃÄdisplay_time  0/67  Ram=4
+      ³  ³  ³  ÀÄ*
+      ³  ³  ÃÄdisplay_time  0/67  Ram=4
+      ³  ³  ³  ÀÄ*
+      ³  ³  ÃÄdisplay_time  0/67  Ram=4
+      ³  ³  ³  ÀÄ*
+      ³  ³  ÃÄ@goto10858  0/8  Ram=0
+      ³  ³  ÃÄdisplay_time_alarm_on  0/70  Ram=4
+      ³  ³  ³  ÃÄ@DIV88  0/21  Ram=3
+      ³  ³  ³  ÃÄdisplay_led  0/60  Ram=3
+      ³  ³  ³  ³  ÀÄ*
+      ³  ³  ³  ÃÄ@DIV88  0/21  Ram=3
+      ³  ³  ³  ÃÄdisplay_led  0/60  Ram=3
+      ³  ³  ³  ³  ÀÄ*
+      ³  ³  ³  ÃÄ@DIV88  0/21  Ram=3
+      ³  ³  ³  ÃÄdisplay_led  0/60  Ram=3
+      ³  ³  ³  ³  ÀÄ*
+      ³  ³  ³  ÃÄ@DIV88  0/21  Ram=3
+      ³  ³  ³  ÃÄdisplay_led  0/60  Ram=3
+      ³  ³  ³  ³  ÀÄ*
+      ³  ³  ³  ÃÄ@DIV88  0/21  Ram=3
+      ³  ³  ³  ÃÄdisplay_led  0/60  Ram=3
+      ³  ³  ³  ³  ÀÄ*
+      ³  ³  ³  ÃÄ@DIV88  0/21  Ram=3
+      ³  ³  ³  ÀÄdisplay_led  0/60  Ram=3
+      ³  ³  ³     ÀÄ*
+      ³  ³  ÃÄdisplay_time_alarm_on  0/70  Ram=4
+      ³  ³  ³  ÀÄ*
+      ³  ³  ÃÄdisplay_time_alarm_on  0/70  Ram=4
+      ³  ³  ³  ÀÄ*
+      ³  ³  ÀÄdisplay_time_alarm_on  0/70  Ram=4
+      ³  ³     ÀÄ*
+      ³  ÃÄdelayled_off  0/47  Ram=3
+      ³  ³  ÀÄ*
+      ³  ÀÄdelayled_on_edit  0/89  Ram=3
+      ³     ÀÄ*
+      ÃÄrtc_get_time  (Inline)  Ram=4
+      ³  ÃÄread_ds1302  0/46  Ram=3
+      ³  ³  ÀÄ*
+      ³  ÃÄrm_bcd  0/20  Ram=4
+      ³  ³  ÀÄ@MUL88  0/37  Ram=2
+      ³  ÃÄread_ds1302  0/46  Ram=3
+      ³  ³  ÀÄ*
+      ³  ÃÄrm_bcd  0/20  Ram=4
+      ³  ³  ÀÄ*
+      ³  ÃÄread_ds1302  0/46  Ram=3
+      ³  ³  ÀÄ*
+      ³  ÀÄrm_bcd  0/20  Ram=4
+      ³     ÀÄ*
+      ÃÄrtc_get_date  (Inline)  Ram=5
+      ³  ÃÄread_ds1302  0/46  Ram=3
+      ³  ³  ÀÄ*
+      ³  ÃÄrm_bcd  0/20  Ram=4
+      ³  ³  ÀÄ*
+      ³  ÃÄread_ds1302  0/46  Ram=3
+      ³  ³  ÀÄ*
+      ³  ÃÄrm_bcd  0/20  Ram=4
+      ³  ³  ÀÄ*
+      ³  ÃÄread_ds1302  0/46  Ram=3
+      ³  ³  ÀÄ*
+      ³  ÃÄrm_bcd  0/20  Ram=4
+      ³  ³  ÀÄ*
+      ³  ÃÄread_ds1302  0/46  Ram=3
+      ³  ³  ÀÄ*
+      ³  ÀÄrm_bcd  0/20  Ram=4
+      ³     ÀÄ*
+      ÃÄds18b20_read  0/52  Ram=7
+      ³  ÃÄonewire_reset  0/31  Ram=1
+      ³  ³  ÃÄ@delay_us1  0/17  Ram=1
+      ³  ³  ÀÄ@delay_us1  0/17  Ram=1
+      ³  ÃÄonewire_write  0/40  Ram=2
+      ³  ÃÄonewire_write  0/40  Ram=2
+      ³  ÃÄonewire_read  0/45  Ram=2
+      ³  ÃÄdisplay_tem  0/33  Ram=2
+      ³  ³  ÃÄ@DIV88  0/21  Ram=3
+      ³  ³  ÃÄdisplay_led  0/60  Ram=3
+      ³  ³  ³  ÀÄ*
+      ³  ³  ÃÄ@DIV88  0/21  Ram=3
+      ³  ³  ÃÄdisplay_led  0/60  Ram=3
+      ³  ³  ³  ÀÄ*
+      ³  ³  ÃÄdisplay_led  0/60  Ram=3
+      ³  ³  ³  ÀÄ*
+      ³  ³  ÀÄdisplay_led  0/60  Ram=3
+      ³  ³     ÀÄ*
+      ³  ÃÄonewire_reset  0/31  Ram=1
+      ³  ³  ÀÄ*
+      ³  ÃÄonewire_write  0/40  Ram=2
+      ³  ÃÄonewire_write  0/40  Ram=2
+      ³  ÃÄonewire_read  0/45  Ram=2
+      ³  ÀÄonewire_read  0/45  Ram=2
+      ÃÄdelayled_on  0/119  Ram=2
+      ³  ÃÄ@goto10884  0/11  Ram=0
+      ³  ÃÄdisplay_time  0/67  Ram=4
+      ³  ³  ÀÄ*
+      ³  ÃÄdisplay_time  0/67  Ram=4
+      ³  ³  ÀÄ*
+      ³  ÃÄdisplay_tem  0/33  Ram=2
+      ³  ³  ÀÄ*
+      ³  ÃÄdisplay_edit_h_alarm_off  0/63  Ram=5
+      ³  ³  ÃÄdisplay_led  0/60  Ram=3
+      ³  ³  ³  ÀÄ*
+      ³  ³  ÃÄdisplay_led  0/60  Ram=3
+      ³  ³  ³  ÀÄ*
+      ³  ³  ÃÄ@DIV88  0/21  Ram=3
+      ³  ³  ÃÄdisplay_led  0/60  Ram=3
+      ³  ³  ³  ÀÄ*
+      ³  ³  ÃÄ@DIV88  0/21  Ram=3
+      ³  ³  ÃÄdisplay_led  0/60  Ram=3
+      ³  ³  ³  ÀÄ*
+      ³  ³  ÃÄdisplay_led  0/60  Ram=3
+      ³  ³  ³  ÀÄ*
+      ³  ³  ÃÄdisplay_led  0/60  Ram=3
+      ³  ³  ³  ÀÄ*
+      ³  ³  ÀÄdisplay_time  0/67  Ram=4
+      ³  ³     ÀÄ*
+      ³  ÃÄdisplay_edit_m_alarm_off  0/63  Ram=5
+      ³  ³  ÃÄdisplay_led  0/60  Ram=3
+      ³  ³  ³  ÀÄ*
+      ³  ³  ÃÄdisplay_led  0/60  Ram=3
+      ³  ³  ³  ÀÄ*
+      ³  ³  ÃÄdisplay_led  0/60  Ram=3
+      ³  ³  ³  ÀÄ*
+      ³  ³  ÃÄdisplay_led  0/60  Ram=3
+      ³  ³  ³  ÀÄ*
+      ³  ³  ÃÄ@DIV88  0/21  Ram=3
+      ³  ³  ÃÄdisplay_led  0/60  Ram=3
+      ³  ³  ³  ÀÄ*
+      ³  ³  ÃÄ@DIV88  0/21  Ram=3
+      ³  ³  ÃÄdisplay_led  0/60  Ram=3
+      ³  ³  ³  ÀÄ*
+      ³  ³  ÀÄdisplay_time  0/67  Ram=4
+      ³  ³     ÀÄ*
+      ³  ÃÄdisplay_edit_h_alarm_off  0/63  Ram=5
+      ³  ³  ÀÄ*
+      ³  ÃÄdisplay_edit_m_alarm_off  0/63  Ram=5
+      ³  ³  ÀÄ*
+      ³  ÃÄ@goto10899  0/11  Ram=0
+      ³  ÃÄdisplay_time_alarm_on  0/70  Ram=4
+      ³  ³  ÀÄ*
+      ³  ÃÄdisplay_time_alarm_on  0/70  Ram=4
+      ³  ³  ÀÄ*
+      ³  ÃÄdisplay_tem  0/33  Ram=2
+      ³  ³  ÀÄ*
+      ³  ÃÄdisplay_edit_h_alarm_on  0/65  Ram=5
+      ³  ³  ÃÄdisplay_led  0/60  Ram=3
+      ³  ³  ³  ÀÄ*
+      ³  ³  ÃÄdisplay_led  0/60  Ram=3
+      ³  ³  ³  ÀÄ*
+      ³  ³  ÃÄ@DIV88  0/21  Ram=3
+      ³  ³  ÃÄdisplay_led  0/60  Ram=3
+      ³  ³  ³  ÀÄ*
+      ³  ³  ÃÄ@DIV88  0/21  Ram=3
+      ³  ³  ÃÄdisplay_led  0/60  Ram=3
+      ³  ³  ³  ÀÄ*
+      ³  ³  ÃÄdisplay_led  0/60  Ram=3
+      ³  ³  ³  ÀÄ*
+      ³  ³  ÃÄdisplay_led  0/60  Ram=3
+      ³  ³  ³  ÀÄ*
+      ³  ³  ÀÄdisplay_time_alarm_on  0/70  Ram=4
+      ³  ³     ÀÄ*
+      ³  ÃÄdisplay_edit_m_alarm_on  0/75  Ram=5
+      ³  ³  ÃÄdisplay_led  0/60  Ram=3
+      ³  ³  ³  ÀÄ*
+      ³  ³  ÃÄdisplay_led  0/60  Ram=3
+      ³  ³  ³  ÀÄ*
+      ³  ³  ÃÄdisplay_led  0/60  Ram=3
+      ³  ³  ³  ÀÄ*
+      ³  ³  ÃÄdisplay_led  0/60  Ram=3
+      ³  ³  ³  ÀÄ*
+      ³  ³  ÃÄ@DIV88  0/21  Ram=3
+      ³  ³  ÃÄdisplay_led  0/60  Ram=3
+      ³  ³  ³  ÀÄ*
+      ³  ³  ÃÄ@DIV88  0/21  Ram=3
+      ³  ³  ÃÄdisplay_led  0/60  Ram=3
+      ³  ³  ³  ÀÄ*
+      ³  ³  ÀÄdisplay_time_alarm_on  0/70  Ram=4
+      ³  ³     ÀÄ*
+      ³  ÃÄdisplay_edit_h_alarm_on  0/65  Ram=5
+      ³  ³  ÀÄ*
+      ³  ÀÄdisplay_edit_m_alarm_on  0/75  Ram=5
+      ³     ÀÄ*
+      ÀÄclock_alarm  0/45  Ram=1
+         ÃÄdelayled_off  0/47  Ram=3
+         ³  ÀÄ*
+         ÃÄrtc_get_time  (Inline)  Ram=4
+         ³  ÀÄ*
+         ÀÄdisplay_time_alarm_on  0/70  Ram=4
+            ÀÄ*

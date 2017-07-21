@@ -1,0 +1,90 @@
+
+ROM used:   1792/8192 (22%)
+            1792/8192 (22%) including unused fragments
+
+            1.3 Average locations per line
+            5.2 Average locations per statement
+
+RAM used:   21/368 (6%) at main() level
+            42/368 (11%) worst case
+
+Stack used: 6 worst case (6 in main + 0 for interrupts)
+Stack size: 8
+
+Lines Stmts  %   Files
+----- ----- ---  -----
+   41    23   7  main.c
+   18     0   0  main.h
+  768     0   0  C:\Program Files (x86)\PICC\Devices\16F887.h
+  143    53  15  C:\Program Files (x86)\PICC\Drivers\ds1302.c
+   54    22   6  ds18b20.c
+   61    22   6  1_day.c
+  311   223  65  display.c
+----- -----
+ 1396   343 Total
+
+Page ROM  %  RAM   Vol Diff  Functions:
+---- --- --- ---   --- ----  ----------
+ Inline         1             @delay_ms1
+0     17   1    1             @delay_us1
+0     24   1    2   211  4.5  write_ds1302_byte
+0     15   1    2   104  2.0  write_ds1302
+0     46   3    3   414  5.0  read_ds1302
+0     35   2    2   254  3.7  rtc_init
+0     23   1    4   176  5.6  get_bcd
+0     21   1    3             @DIV88
+0     37   2    2             @MUL88
+0     20   1    4   160  4.5  rm_bcd
+ Inline         7   437  2.4  rtc_set_datetime
+ Inline         5   260  3.5  rtc_get_date
+ Inline         4   186  3.3  rtc_get_time
+0     31   2    1    86  1.3  onewire_reset
+0     40   2    2   272  4.3  onewire_write
+0     45   3    2   300  3.2  onewire_read
+0     27   2    0             @const684
+ Inline         1    59  1.2  off_on_led
+0     32   2    6             @WRITEBITA
+0     60   3    3    78  2.7  display_led
+0     70   4    4   341  3.5  display_time_alarm_on
+0     67   4    4   300  3.0  display_time
+ Inline         2   147  2.7  display_tem
+0     63   4    5   502  5.1  display_edit_h_alarm_off
+0     63   4    5   502  5.1  display_edit_m_alarm_off
+0     65   4    5   518  5.6  display_edit_h_alarm_on
+0     65   4    5   518  5.6  display_edit_m_alarm_on
+0     89   5    3   984  7.4  delayled_on_edit
+0      8   0    0             @goto10840
+0      8   0    0             @goto10852
+0    113   6    2  1324  7.4  delayled_on
+0     11   1    0   399  5.6  @goto10878
+0     11   1    0  2588  8.8  @goto10893
+0     47   3    3   404  3.9  delayled_off
+0     75   4    1   399  5.6  clock_alarm
+0    282  16    0  2513  8.9  edit_time
+0     11   1    0   404  3.9  @goto10971
+0     84   5    7   497  4.5  ds18b20_read
+0    183  10    1   656  4.3  MAIN
+ Inline         0   477  4.5  @cinit1
+
+Program metrics:
+    Functions               32
+    Statements              343
+    Comments                229
+    Volume (V)              29151
+    Difficulty (D)          142.4
+    Effort to implement (E) 4152377
+    Time to implement (T)   64 hours, 5 minutes
+    Est Delivered Bugs (B)  9
+    Cyclomatic Complexity   111
+    Maintainability (MI)    54
+
+ Segment     Used  Free
+-----------  ----  ----
+00000-00003     4  0  
+00004-007FF  1788  256  
+00800-00FFF     0  2048  
+01000-017FF     0  2048  
+01800-01FFF     0  2048  
+
+
+
